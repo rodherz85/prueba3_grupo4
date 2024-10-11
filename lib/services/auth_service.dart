@@ -4,7 +4,7 @@ import 'package:http/http.dart' as http;
 
 class AuthService extends ChangeNotifier {
   final String _baseUrl = 'identitytoolkit.googleapis.com';
-  final String _firebaseToken = 'AIzaSyATuuUQ2KOhosIAtAVwGtAHSUTD2mn2r1Q';
+  final String _firebaseToken = 'AIzaSyATuuUQ2KOhosIAtAVwGtAHSUTD2mn2r1Q'; //Este token es del firebase que cree, si uds crean uno proyecto en firebase, será distinto
 
   Future<String?> login(String email, String password) async {
     //metodo para iniciar sesión
