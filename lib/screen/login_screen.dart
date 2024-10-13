@@ -101,7 +101,7 @@ class LoginForm extends StatelessWidget {
                     final String? errorMessage = await authService.login(
                         Loginform.email, Loginform.password);
                     if (errorMessage == null) {
-                      Navigator.pushNamed(context, 'error');
+                      Navigator.pushReplacementNamed(context, 'home');
                     } else {
                       print(errorMessage);
                     }
